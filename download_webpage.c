@@ -1,3 +1,9 @@
+//How to execute this function:
+//First use gcc to execute the file 
+//gcc download_webpage.c -lcurl -o download_webpage
+//Then specify the URL and the file's name
+//./download_webpage https://labsticc.fr/en/directory web-site-source.txt
+
 //This is inspired by serveur_TPH_ontology.py
 //"A good function has a good description!"
 
