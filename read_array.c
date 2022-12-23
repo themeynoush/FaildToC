@@ -3,9 +3,8 @@
 
 int main()
 {
-//define the size of the Charachter
-char myName[100];
+char myName[100]; //define the size of the Charachter
 printf("\nEnter your name:\n");
-scanf("%s", myName);
-printf("Welcome %s! \n", myName);
+scanf("%s", myName); //read the user's name
+printf("Welcome %s! \n", myName); //print the name out
 }
