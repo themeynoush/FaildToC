@@ -7,7 +7,7 @@ int main()
 
   // Read in the integer from the user
 
-  printf("\nEnter an integer from 1 to 100000: \n");
+  printf("\nEnter an integer from 1 to 999999999999999: \n");
   scanf("%lld", &i);
 
   numenator = (i* 1000 + i*100 + i*10 + i);
