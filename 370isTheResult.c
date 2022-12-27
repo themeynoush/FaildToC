@@ -9,7 +9,6 @@ int main()
 
   printf("\nEnter an integer from 1 to 999999999999999: \n");
   scanf("%lld", &i);
-
   numenator = (i* 1000 + i*100 + i*10 + i);
   //printf("%d \n", numenator);
 
