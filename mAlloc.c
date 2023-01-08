@@ -11,7 +11,7 @@ int main()
     //ptr = (castType*) malloc(size)
     //in the size section if I just put a number like 20 that would cause a problem
     //because it may be different from one computer to another 
-    //so we say five times int size, for example
+    //so we say five times int size, for example. Which is 20 bytes of memory
     ptr = (int*) malloc(5*sizeof(int));
     //now we can see where the pointer referes to
     printf("%p\n", ptr);
