@@ -10,7 +10,13 @@ ssize_t read;
 // strstr variable
 const char *identifier = "Searcher-category--summary"; //The needle
 
-Personnel_t rec;
+
+//Calls definition function
+Personnel_t records[1000];
+int n = 0;
+
+
+// Personnel_t rec;
 
 int main() {
     //downlaods
@@ -22,7 +28,9 @@ int main() {
     while ((read = getline(&line, &len, fp)) != -1) {
         //if you found the identifier in line, print the following:
         if (strstr(line, identifier)) {
-            getFields(line);
+            getFields(line); // save data to rec.
+            records[n] = rec; // save record.
+            n++;
         }
     }
     //if check data line ()

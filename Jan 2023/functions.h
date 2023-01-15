@@ -16,6 +16,8 @@ typedef struct
     char establishment[40];
 } Personnel_t;
 
+Personnel_t rec;
+
 void downloadData();
 void openFile();
 void getFields(char *line);

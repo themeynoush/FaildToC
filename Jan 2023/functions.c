@@ -17,5 +17,32 @@ void openFile()
 
 void getFields(char *line)
 {
-    printf("%s", line);
+    int pos = 0;
+    char *word, *brkt;
+    char *sep = "<>";
+    
+    for (word = strtok_r(line, sep, &brkt); word; word = strtok_r(NULL, sep, &brkt))
+    {
+        // printf("We're at position %d = %s\n", pos, word);
+        if (pos == 2)
+        {
+            //printf("team is %s\t\t", word);
+            strcpy (rec.team, word);  
+            printf("Team: %s\n", rec.team);
+        }
+        if (pos == 5)
+        {
+            //printf("Establishment is %s\t\t", word);
+            strcpy (rec.establishment, word);  
+            printf("Establishment: %s\n", rec.establishment);
+        }
+        if (pos == 11)
+        {
+            //printf("Name %s\t\t", word);
+            strcpy (rec.name, word);  
+            // printf("\n*****************\n");
+            printf("Name:  %s\n", rec.name);
+        }
+        pos++;
+    }
 }
