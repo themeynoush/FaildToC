@@ -21,7 +21,7 @@ Personnel_t rec;
 void downloadData();
 void openFile();
 void getFields(char *line);
-
+int menuChoice();
 
 
 
