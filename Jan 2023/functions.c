@@ -15,7 +15,7 @@ void openFile()
         exit(EXIT_FAILURE);
 }
 
-// int isDataLine()
-// {
-
-// }
+void getFields(char *line)
+{
+    printf("%s", line);
+}

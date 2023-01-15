@@ -8,9 +8,17 @@
 
 FILE * fp;
 
+typedef struct 
+{
+    char name[40];
+    char department[30];
+    char team[30];
+    char establishment[40];
+} Personnel_t;
+
 void downloadData();
 void openFile();
-// int isDataLine();
+void getFields(char *line);
 
 
 

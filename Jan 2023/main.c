@@ -10,6 +10,8 @@ ssize_t read;
 // strstr variable
 const char *identifier = "Searcher-category--summary"; //The needle
 
+Personnel_t rec;
+
 int main() {
     //downlaods
     downloadData();
@@ -20,7 +22,7 @@ int main() {
     while ((read = getline(&line, &len, fp)) != -1) {
         //if you found the identifier in line, print the following:
         if (strstr(line, identifier)) {
-            printf("hi");
+            getFields(line);
         }
     }
     //if check data line ()
