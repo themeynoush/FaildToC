@@ -62,9 +62,9 @@ int main(void)
 
                 if (pos == 2)
                 {
-                    printf("team is %s\t\t", word);
+                    //printf("team is %s\t\t", word);
                     strcpy (records[n].team, word);  
-                    printf("Team %s\n", records[n].team);
+                    printf("Team : %s\n", records[n].team);
                 }
                     
                 // if (pos == 5)
